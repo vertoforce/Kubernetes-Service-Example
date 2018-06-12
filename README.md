@@ -1,3 +1,9 @@
+Info
+=====
+
+This repo is a quick reference to deploy a load-balanced kubernetes service using a docker image that runs apache and simply displays the hostname it is run on.
+
+
 Setup
 ========
 
@@ -8,6 +14,10 @@ Docker
 First build the docker container in the `docker_apache` folder.
 
 `docker build -t vertoforce/apache .`
+
+Then push the docker container to the docker registry
+
+`docker push vertoforce/apache`
 
 
 
